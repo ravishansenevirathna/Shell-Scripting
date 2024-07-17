@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#Author = ravishan
+
+set -x #debug
+ps -ef
+
+grep
+
+| - pipe
+
+date = all the info about today
+date | echo "today is"
