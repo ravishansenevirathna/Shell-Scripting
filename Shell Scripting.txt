@@ -49,3 +49,22 @@ for i in {1.100}; do echo $1; done
 
 # this statement is echo 1 to 100 numbers one by one if one number is printed and after that it will increment  by 1+
 
+
+##########################################################
+write a shell script to print numbers divided by 3 or 5 and not the 15
+##########################################################
+
+#!/bin/bash
+
+#author: Ravishan
+#date: 7/18/2024
+# divide by 3, divide by5, not 3*5=15
+
+
+for i in {1..100}; do
+if ([`expr $i % 3` == 0 ] || [`expr $i % 5` == 0 ]) && [`expr $i % 15` != 0 ];
+then
+	echo $i
+fi;
+done
+##########################################################
