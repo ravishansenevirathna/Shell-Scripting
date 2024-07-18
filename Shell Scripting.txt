@@ -67,4 +67,29 @@ then
 	echo $i
 fi;
 done
-##########################################################
+
+
+
+##################################################################
+
+write a script to print the number of "s" in "Mississippi"
+
+#!/bin/bash
+
+x=Mississippi
+
+grep -o "s" <<<"$x" | wc -l
+
+
+
+o = only
+wc = word count
+
+
+
+##################################################################
+
+how will you debug the shell script?
+
+set -x
+
