@@ -39,3 +39,13 @@ then
 else
 	echo "b is greater than a"
 fi
+
+
+##########################################################
+for loop
+##########################################################
+
+for i in {1.100}; do echo $1; done
+
+# this statement is echo 1 to 100 numbers one by one if one number is printed and after that it will increment  by 1+
+
