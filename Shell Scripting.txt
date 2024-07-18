@@ -1,6 +1,7 @@
 #!/bin/bash
-
+##########################################################
 #Author = ravishan
+##########################################################
 
 set -x #debug
 ps -ef
@@ -11,3 +12,30 @@ grep
 
 date = all the info about today
 date | echo "today is"
+
+###########################################################
+#if , if else
+###########################################################
+if [expression]
+then 
+	echo "hi"
+	your things to do with this
+else
+	echo "how are you"
+	
+fi
+
+##########################################################
+#sample question
+##########################################################
+
+a=4
+b=10
+
+if[ $a > $b ]
+then
+	echo "a is greater than b"
+
+else
+	echo "b is greater than a"
+fi
