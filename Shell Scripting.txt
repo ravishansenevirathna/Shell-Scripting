@@ -89,6 +89,46 @@ wc = word count
 
 ##################################################################
 
+#!/bin/bash
+
+
+
+#Author: ravishan
+#date : 7/18/2024
+#
+#version : v1
+#this script will report the aws resource usage
+#############################
+#
+#AWS S3
+#AWS EC2
+#AWS Lambda
+#AWS IAM Users
+
+set -x
+
+#list S3 Buckets
+echo "print S3 Buckets"
+aws s3 ls
+
+#list EC2 Instances
+echo "print EC2"
+aws ec2 describe-instances
+
+#list lambda
+echo "print lambda"
+aws lambda list-functions
+
+#list IAM Users
+echo "print IAM Users"
+aws iam list-users
+
+
+echo "##########################################################"
+aws ec2 describe-instances | jq '.Reservations[].Instances[].InstanceId'
+
+
+
 how will you debug the shell script?
 
 set -x
