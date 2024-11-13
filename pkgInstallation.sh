@@ -9,7 +9,7 @@ then
         echo "The installation of $package was successful."
         echo "the new command is available here:"
         
-################ find the any package that is install in your ubuntu system.###############
+################ select any package that you will need to install in your ubuntu system.###############
         which $package
 else
         echo "the $package is failed to install"
