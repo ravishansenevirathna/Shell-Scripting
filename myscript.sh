@@ -66,4 +66,39 @@ else
         echo "htop is not available installing it"
         sudo apt update && sudo apt install -y htop
 fi
-##################################################################
+
+###################################################################
+## status about above commands weather success or not
+echo "exit code is : $?"
+
+
+###################################################################
+# while loop
+
+myvar=1
+
+while [ $myvar -le 10 ]
+do
+        echo "this is while loop $myvar "
+        myvar=$(( $myvar +1 ))
+        sleep 0.5
+done
+
+####################################################################
+# for loop
+
+for n in {1..10}
+do
+        echo "this is for loop - $n"
+        sleep 1
+done
+
+echo "this is outside the for loop."
+
+########################################################################
+# get the inputs from user.
+# standard inputs
+
+echo "please enter your name "
+read username
+echo "your username is $username"
