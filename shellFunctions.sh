@@ -5,7 +5,7 @@ release_file=/etc/os-release
 check_exit_status() {
         if [ $? -ne 0 ]
         then
-        echo "an error ...................................."
+        echo "an error .................................."
         fi
 }
 
